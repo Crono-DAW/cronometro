@@ -6,16 +6,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 	<div class="container-fluid container-guay">
-			<div class="row">
-				<div class="col-xs-12">
-					<div id="marcador"><h1 id="displayText"></h1></div>
-				</div>
-			</div>	
-			
+		<div class="row" id="cajaControles">
+			<div id="marcador" class="col-xs-6">
+				<p>00:00:00</p>
+			</div>
+			<div class="col-xs-2">
+				<button id="controlar" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>  <!-- glyphicon-pause -->
+			</div>
+			<div class="col-xs-2">
+				<button id="marcar" class="btn btn-success btn-block"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+			</div>
+			<div class="col-xs-2">
+				<button id="cancelar" class="btn btn-danger btn-block"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+			</div>
 		</div>
+		<div class="row">
+			<div id="cajaResultados" class="col-xs-12">
+				<h1>Resultados: </h1>
+				<ol id="resultados">
+				</ol>
+			</div>
+
+		</div>		
+		
+	</div>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/cronometro.js"></script>
 </body>
 </html>

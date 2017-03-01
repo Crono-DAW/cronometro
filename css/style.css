@@ -10,3 +10,22 @@
 	box-shadow: 10px 10px 5px grey;
 	padding-bottom: 20px;
 }
+#marcador {
+	font-family: cal;
+	border: 1px solid grey;
+	box-shadow: 2px 2px 5px black;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 2em;
+}
+
+#cajaControles {
+	margin-top: 30px;
+}
+#cajaResultados {
+	visibility: hidden;
+}
+.btn {
+	height: 52px;
+	box-shadow: 2px 2px 5px black;
+}
