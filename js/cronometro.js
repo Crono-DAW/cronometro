@@ -34,15 +34,14 @@ function Cronometro() {
 
         //inicializamos variables auxiliares que poder editar en esta vuelta de bucle.
 
-        var aux_milisegundos = milisegundos;
+        var aux_milisegundos = milisegundos/10;
         var aux_segundos = segundos;
         var aux_minutos = minutos;
         var aux_horas = horas;
 
         //arreglos en las variables auxiliares para su visualización, los 0 a la izquierda en caso de ocupar poco.
 
-        if (aux_milisegundos < 10) aux_milisegundos = "00" + aux_milisegundos;
-        else if (aux_milisegundos < 100) aux_milisegundos = "0" + aux_milisegundos;
+        if (aux_milisegundos < 10) aux_milisegundos = "0" + aux_milisegundos;
         if (aux_segundos < 10) aux_segundos = "0" + aux_segundos;
         if (aux_minutos < 10) aux_minutos = "0" + aux_minutos;
         if (aux_horas < 10) aux_horas = "0" + aux_horas;
