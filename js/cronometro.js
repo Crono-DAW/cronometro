@@ -87,7 +87,7 @@ $("#cancelar").click(
         horas = 0;
         $("#pausar").hide();
         $("#comenzar").show();
-        $("#marcador > p").html("00:00:00 000");
+        $("#marcador > p").html("00:00:00 00");
     }
 );
 
@@ -95,6 +95,6 @@ $("#cancelar").click(
 $(document).ready(
     function() {
         $("#pausar").hide();
-        $("#marcador > p").html("00:00:00 000");
+        $("#marcador > p").html("00:00:00 00");
     }
 );
