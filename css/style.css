@@ -1,8 +1,8 @@
-            /* ----------  IMPORTACION DE FUENTES ----------- */
+/* ----------  IMPORTACION DE FUENTES ----------- */
 
 @font-face {
-    font-family: "cal";
-    src: url('Calculator.ttf');
+    font-family: Calculator;
+    src: url('../fonts/Calculator.ttf');
 }
 
 .container-guay {
@@ -11,7 +11,7 @@
 	padding-bottom: 20px;
 }
 #marcador {
-	font-family: cal;
+	font-family: Calculator;
 	border: 1px solid grey;
 	box-shadow: 2px 2px 5px black;
 	text-align: center;
@@ -28,4 +28,8 @@
 .btn {
 	height: 52px;
 	box-shadow: 2px 2px 5px black;
+}
+
+button#comenzar.btn-block + button#pausar.btn-block {
+    margin-top: 0px;
 }

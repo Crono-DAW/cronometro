@@ -11,12 +11,12 @@
 <body>
 	<div class="container-fluid container-guay">
 		<div class="row" id="cajaControles">
-			<div id="marcador" class="col-xs-6">
-				<p>00:00:00</p>
+			<div class="col-xs-6">
+				<div id="marcador">
+					<p></p>
+				</div>
 			</div>
-			<div class="col-xs-2">
-				<button id="controlar" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>  <!-- glyphicon-pause -->
-			</div>
+			<div class="col-xs-2"><button id="comenzar" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button><button id="pausar" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-pause" aria-hidden="true"></span></button></div>
 			<div class="col-xs-2">
 				<button id="marcar" class="btn btn-success btn-block"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
 			</div>
@@ -34,7 +34,7 @@
 		</div>		
 		
 	</div>
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/cronometro.js"></script>
 </body>
 </html>
