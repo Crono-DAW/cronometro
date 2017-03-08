@@ -73,8 +73,11 @@ $("#pausar").click(
 
 $("#marcar").click(
     function(e) {
-        //Funcionalidad pendiente de implementar.
-        alert("funcionalidad no implementada");
+        if ($("#cajaResultados").hide()) {
+        	$("#cajaResultados").show();
+        }
+        
+        $("#resultados").append("<li>"+ $("#marcador > p").text() +"</li>");
     }
 );
 
@@ -85,9 +88,12 @@ $("#cancelar").click(
         segundos = 0;
         minutos = 0;
         horas = 0;
+        pausado = false;
         $("#pausar").hide();
         $("#comenzar").show();
         $("#marcador > p").html("00:00:00 00");
+        $("#resultados").html("");
+        $("#cajaResultados").hide();
     }
 );
 

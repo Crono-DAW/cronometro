@@ -23,7 +23,7 @@
 	margin-top: 30px;
 }
 #cajaResultados {
-	visibility: hidden;
+	display: none;
 }
 .btn {
 	height: 52px;
